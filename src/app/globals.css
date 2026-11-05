@@ -1,0 +1,18 @@
+@layer theme, base, antd, components, utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tahoma", "Arial", sans-serif;
+}
+
+@layer base {
+  body { margin: 0; background: #f6f8fa; color: #1d2939; font-family: var(--font-sans); }
+  button, a, input { -webkit-tap-highlight-color: transparent; }
+  ::selection { background: #c5f4e4; }
+}
+
+@layer components {
+  .surface { @apply rounded-2xl border border-slate-200 bg-white; }
+  .eyebrow { @apply text-[11px] font-semibold tracking-[0.15em] text-slate-400 uppercase; }
+  .metric { @apply rounded-2xl border border-slate-200 bg-white p-5; }
+}
